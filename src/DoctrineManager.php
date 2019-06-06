@@ -10,7 +10,7 @@ use Kint;
 class DoctrineManager{
 
     private $container;
-    private $em;
+    public $em;
 
     public function __construct(Container $container)
     {

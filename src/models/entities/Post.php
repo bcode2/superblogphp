@@ -22,7 +22,7 @@ class Post extends Entity{
     
      
      */
-    protected $title;
+    public $title;
 
     /**
      * @ORM\Column(type="string")
@@ -52,4 +52,12 @@ class Post extends Entity{
         $this->updated_at= new \DateTime('now');
     }
 
+
+    /**
+     * Get the value of title
+     */ 
+    public function getTitle()
+    {
+        return $this->title;
+    }
 }
